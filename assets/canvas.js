@@ -80,7 +80,7 @@ TweenLite.delayedCall(0.2, function() {
   }
 });
 }
-//runGsap();
+runGsap();
 floatySpace();
 $(window).resize(function () {
   space.removeAll();
