@@ -1,0 +1,24 @@
+.projects-section {
+  padding: 53px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-bottom: 80px;
+  .title {
+    font-family: ralewayregular, sans-serif;
+    font-size: 3em;
+    text-align: center;
+    color: #444649;
+    text-shadow: 0 0 2px #444649;
+  }
+
+  .title-bar {
+    width: 90px;
+    border-bottom: 4px solid #444649;
+    margin: 0 auto;
+    animation-delay: 0.15s;
+    margin-bottom: 100px;
+    box-shadow: 0 0 1px #444649;
+  }
+}

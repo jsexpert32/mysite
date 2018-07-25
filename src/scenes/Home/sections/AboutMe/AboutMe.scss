@@ -1,0 +1,144 @@
+.about-me {
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+  .flow-background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #edf3f8;
+  }
+
+  svg {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    transform: translateZ(0px);
+  }
+
+  .pentahedron {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    fill: #3E82F7;
+  }
+
+  .point {
+    fill: #8491A3;
+  }
+
+  .rhombus {
+    fill: #2DA94F;
+    stroke: #2DA94F;
+  }
+
+  .x
+  {
+    fill: #FDBD00;
+  }
+
+  .circle {
+    fill: #ED412D
+  }
+
+  .title {
+    font-family: ralewayregular, sans-serif;
+    font-size: 3em;
+    text-align: center;
+    color: #444649;
+
+    text-shadow:
+            0 0 1px #444649;
+  }
+
+  .title-bar {
+    width: 90px;
+    border-bottom: 4px solid #444649;
+    margin: 0 auto;
+    animation-delay: 0.15s;
+    margin-bottom: 100px;
+    box-shadow:
+            0 0 1px #444649;
+  }
+
+  .photo-container {
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  .photo-title {
+    font-family: ralewaybold, sans-serif;
+    font-size: 2.0em;
+    text-align: center;
+    font-style: italic;
+  }
+
+  .photo-description {
+    padding-top: 15px;
+    font-size: 1.1em;
+    .decorate {
+      //text-decoration: underline;
+      color: #009ADA;
+
+      &.page-scroll {
+        cursor: pointer;
+
+        &:hover {
+          color:#009ADA ;
+        }
+      }
+    }
+
+    .reach-out-me {
+      padding-top: 10px;
+      font-size: 0.85em;
+    }
+  }
+
+  .about-me-section {
+    padding-top: 50px;
+    .connect-me {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      margin-top: 40px;
+      .social-icon {
+        margin: 0 20px;
+        color: #212529;
+
+        span {
+          font-size: 2.5em;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .skills-container {
+    @media only screen and (max-width: 992px) {
+      margin-top: 30px;
+    }
+  }
+
+  #curveUpColor {
+    position: absolute;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    fill: #262b2e;
+    stroke: #262b2e;
+    bottom: 0;
+    width: 100%;
+  }
+}

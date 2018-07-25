@@ -1,0 +1,15 @@
+.floating-photo {
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
+  border: 5px #bbb solid;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 5px 15px 0 #444649;
+  transform: translateY(0px);
+  animation: float 6s ease-in-out infinite; }
+  .floating-photo a {
+    cursor: pointer; }
+    .floating-photo a img {
+      width: 100%;
+      height: auto; }

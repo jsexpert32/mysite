@@ -1,0 +1,28 @@
+.home-section {
+  background-color: #262b2e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 900px;
+  height: 100vh;
+  position: relative;
+  overflow: hidden; }
+  .home-section .Aligner-item {
+    width: 100%;
+    min-height: 1px; }
+    @media only screen and (min-width: 991px) {
+      .home-section .Aligner-item {
+        max-width: 50%; } }
+  .home-section .Aligner-item--top {
+    align-self: flex-start; }
+  .home-section .Aligner-item--bottom {
+    align-self: flex-end; }
+  .home-section .animation-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%; }
+  .home-section #welcome-container {
+    position: absolute; }

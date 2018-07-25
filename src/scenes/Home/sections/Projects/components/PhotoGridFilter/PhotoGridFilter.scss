@@ -1,0 +1,25 @@
+.photo-filter-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #444649;
+  font-family: ralewaybold, sans-serif;
+  @media only screen and (max-width: 683px) {
+    flex-wrap: wrap;
+  }
+  .filter-option {
+    padding: 7px 20px;
+    cursor: pointer;
+    margin: 10px 15px;
+    transition: background 0.5s ease,
+      padding 0.8s linear;
+    &:hover {
+      color: white;
+    }
+    &.selected {
+      color: white;
+      background-color: #E31B6D;
+    }
+  }
+}
