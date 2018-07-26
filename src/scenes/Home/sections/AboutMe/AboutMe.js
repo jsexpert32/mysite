@@ -10,7 +10,6 @@ import { Link } from 'react-scroll';
 
 const defaultDelay = window.defaultDelay;
 const update = window.update;
-const Skype = window.Skype;
 const SkypeWebControl = window.SkypeWebControl;
 class AboutMe extends React.Component {
   constructor(props) {
@@ -51,8 +50,8 @@ class AboutMe extends React.Component {
     return (
       <Element
         id="about-section"
-        className={['about-me', hideOrShow].join(' ') }
-        >
+        className={['about-me', hideOrShow].join(' ')}
+      >
         <FlowBackground>
           <Container>
             <div className="title wow bounceInLeft animated">About Me</div>
@@ -65,14 +64,14 @@ class AboutMe extends React.Component {
                       iconName="fa-handshake-o"
                       title="Communicative"
                       description="Communication - the human connection - is the key to personal and career success."
-                      />
+                    />
                   </Col>
                   <Col sm="6" xs="12" className="fadeIn animated wow">
                     <Bullet
                       iconName="fa-lightbulb-o"
                       title="Creative"
                       description="Doing the same thing over and over, yet expecting different results, is the definition of crazy."
-                      />
+                    />
                   </Col>
                 </Row>
               </Col>
@@ -83,14 +82,14 @@ class AboutMe extends React.Component {
                       iconName="fa-clock-o"
                       title="Punctuality"
                       description="It is difficult to prove myself reliable when people are required to wait for me."
-                      />
+                    />
                   </Col>
                   <Col sm="6" xs="12" className="fadeIn animated wow">
                     <Bullet
                       iconName="fa-calendar-check-o"
                       title="Organized"
                       description="I do one thing at a time.  I do it very well.  And then I move on"
-                      />
+                    />
                   </Col>
                 </Row>
               </Col>
@@ -104,19 +103,23 @@ class AboutMe extends React.Component {
                 <div className="photo-title">Who is this guy?</div>
                 <div className="photo-description">
                   I am a young-passionated{' '}
-                  <span className="decorate"> Full Stack developer, Team Leader</span>{' '}
+                  <span className="decorate">
+                    {' '}
+                    Full Stack developer, Team Leader
+                  </span>{' '}
                   with 8+years experience, who consider my self as a
                   quick-learner and always study new technologies for the best
                   practice and quality of work.
                   <div className="reach-out-me">
-                    A satisfied client is the best business strategy of all to me.<br></br>
+                    A satisfied client is the best business strategy of all to
+                    me.<br />
                     <Link
                       to="contact-section"
                       className="page-scroll decorate"
                       spy={true}
                       smooth={true}
                       duration={500}
-                      >
+                    >
                       &nbsp; Please share your ideas&nbsp;
                     </Link>
                     and I will make it to real!
@@ -125,25 +128,28 @@ class AboutMe extends React.Component {
                 <div className="connect-me">
                   <a
                     className="social-icon"
+                    rel="noopener noreferrer"
                     target="_blank"
                     href="https://www.linkedin.com/in/shaorun-zhang-350988129"
-                    >
+                  >
                     {' '}
                     <span className="fa fa-linkedin" />{' '}
                   </a>
                   <a
                     className="social-icon"
+                    rel="noopener noreferrer"
                     target="_blank"
                     href="https://www.facebook.com/profile.php?id=100018282452111"
-                    >
+                  >
                     {' '}
                     <span className="fa fa-facebook" />{' '}
                   </a>
                   <a
                     className="social-icon"
+                    rel="noopener noreferrer"
                     target="_blank"
                     href="https://github.com/JSExpert32"
-                    >
+                  >
                     {' '}
                     <span className="fa fa-github" />{' '}
                   </a>
@@ -152,9 +158,10 @@ class AboutMe extends React.Component {
                   </a>
                   <a
                     className="social-icon"
+                    rel="noopener noreferrer"
                     target="_blank"
                     href="mailto:developer1215@outlook.com"
-                    >
+                  >
                     {' '}
                     <span className="fa fa-envelope" />{' '}
                   </a>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Input, Button, Form } from 'reactstrap';
+import { Container, Row, Col, Input, Form } from 'reactstrap';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { postSendEmail } from '../../../../modules/mail/mailAction';
@@ -96,10 +96,18 @@ class Contact extends React.Component {
     return (
       <Element
         id="contact-section"
-        className={['contact-section', hideOrShow].join(' ') }
+        className={['contact-section', hideOrShow].join(' ')}
+      >
+        <svg
+          preserveAspectRatio="none"
+          viewBox="0 0 100 102"
+          height="75"
+          width="100%"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          className="svgcolor-light"
         >
-        <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" className="svgcolor-light">
-          <path d="M0 0 L50 100 L100 0 Z" fill="#edf3f8" stroke="#edf3f8"></path>
+          <path d="M0 0 L50 100 L100 0 Z" fill="#edf3f8" stroke="#edf3f8" />
         </svg>
         <Container>
           <div className="title wow bounceInLeft animated">Contact</div>
@@ -112,25 +120,25 @@ class Contact extends React.Component {
                   type="text"
                   name="name"
                   placeholder="Name"
-                  ref={ref => (this.name = ref) }
+                  ref={ref => (this.name = ref)}
                   onChange={this.handleChangeName}
-                  />
+                />
                 <Input
                   required
                   type="email"
                   name="email"
                   placeholder="Email"
-                  ref={ref => (this.email = ref) }
+                  ref={ref => (this.email = ref)}
                   onChange={this.handleChangeEmail}
-                  />
+                />
                 <Input
                   required
                   type="text"
                   name="subject"
                   placeholder="Subject"
-                  ref={ref => (this.subject = ref) }
+                  ref={ref => (this.subject = ref)}
                   onChange={this.handleChangeSubject}
-                  />
+                />
                 <Input
                   required
                   className="subject"
@@ -138,9 +146,9 @@ class Contact extends React.Component {
                   type="textarea"
                   name="mailbody"
                   placeholder="Hello, Zhang"
-                  ref={ref => (this.mailbody = ref) }
+                  ref={ref => (this.mailbody = ref)}
                   onChange={this.handleChangeMailBody}
-                  />
+                />
                 <div className={messageClass}>
                   <span className={messageIcon} />
                   {messageText}
@@ -148,7 +156,7 @@ class Contact extends React.Component {
                 <Input
                   type="submit"
                   className="submit-button bounceInRight wow animated"
-                  >
+                >
                   Submit
                 </Input>
               </Form>

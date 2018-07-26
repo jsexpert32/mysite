@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import { Button, Modal, ModalBody, ModalFooter } from 'reactstrap';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.css';
 import 'react-responsive-carousel/lib/styles/main.css';
@@ -20,7 +20,7 @@ const projects = [
     subtitle: 'Ztorie Widget Creator',
     url: 'https://alp.app.ztorie.com',
     description:
-      "Ztorie is like instagram story maker.  User can create any widget by adding video , image , texts , music , effects and move,drag,rotate elements and embed it to any website you want. "
+      'Ztorie is like instagram story maker.  User can create any widget by adding video , image , texts , music , effects and move,drag,rotate elements and embed it to any website you want. '
   },
   {
     id: 1,
@@ -141,8 +141,7 @@ const projects = [
     imageCounts: 2,
     titleDetail: 'BeatThread',
     url: 'https://beatthread.com/',
-    description:
-      'Website for Musical Producers.'
+    description: 'Website for Musical Producers.'
   },
   {
     id: 10,
@@ -154,13 +153,17 @@ const projects = [
     imageCounts: 1,
     titleDetail: 'Atlas Global',
     url: 'http://atlas.infocabsglobal.com',
-    description:
-      'Atlas Global is Job Site for engineers.'
+    description: 'Atlas Global is Job Site for engineers.'
   }
 ];
 
 function Figure({ id, groups, imageName, title, skills, handleLearnMore }) {
-  const imgSrc = '/images/projects/' + imageName + '.png';
+  var suffix = '';
+  if (process.env.NODE_ENV === 'production') {
+    suffix = '/mysite';
+  }
+  const imgSrc = suffix + '/images/projects/' + imageName + '.png';
+
   const groupsJSON = JSON.stringify(groups);
 
   return (
@@ -226,15 +229,23 @@ class PhotoGrid extends React.Component {
   render() {
     const detailModalImageCounts = projects[this.state.modalDataID].imageCounts;
     const imagePrefix = projects[this.state.modalDataID].image;
+    var suffix = '';
+    if (process.env.NODE_ENV === 'production') {
+      suffix = '/mysite/';
+    }
     let detailImages = [];
-
     const { titleDetail, subtitle, description, url } = projects[
       this.state.modalDataID
     ];
     for (let index = 0; index < detailModalImageCounts; index++) {
       detailImages.push(
         <div>
-          <img src={'images/projects/' + imagePrefix + '_' + index + '.png'} />
+          <img
+            alt=""
+            src={
+              suffix + 'images/projects/' + imagePrefix + '_' + index + '.png'
+            }
+          />
         </div>
       );
     }

@@ -47,6 +47,7 @@ class Footer extends React.Component {
         <div className="connect-me">
           <a
             className="social-icon"
+            rel="noopener noreferrer"
             target="_blank"
             href="https://www.linkedin.com/in/shaorun-zhang-350988129"
           >
@@ -55,6 +56,7 @@ class Footer extends React.Component {
           </a>
           <a
             className="social-icon"
+            rel="noopener noreferrer"
             target="_blank"
             href="https://www.facebook.com/profile.php?id=100018282452111"
           >
@@ -63,6 +65,7 @@ class Footer extends React.Component {
           </a>
           <a
             className="social-icon"
+            rel="noopener noreferrer"
             target="_blank"
             href="https://github.com/JSExpert32"
           >
@@ -74,6 +77,7 @@ class Footer extends React.Component {
           </a>
           <a
             className="social-icon"
+            rel="noopener noreferrer"
             target="_blank"
             href="mailto:developer1215@outlook.com"
           >
