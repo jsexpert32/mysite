@@ -89,13 +89,13 @@
     font-size: 1.1em;
     .decorate {
       //text-decoration: underline;
-      color: #009ADA;
+      color: #E31B6D;
 
       &.page-scroll {
         cursor: pointer;
 
         &:hover {
-          color:#009ADA ;
+          color:#E31B6D ;
         }
       }
     }

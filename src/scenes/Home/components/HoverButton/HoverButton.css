@@ -5,22 +5,28 @@
   border: 2px solid #fff;
   box-sizing: inherit;
   display: inline-block;
-  transition: all .5s;
+  transition: all 0.5s;
   cursor: pointer;
   color: #fff !important;
   line-height: 18pt;
-  margin-right: 30px; }
-  .hover-button .icon {
-    top: 16px;
-    transition: transform .3s;
-    position: absolute;
-    right: 15px;
-    vertical-align: middle;
-    color: white; }
-  .hover-button:hover {
-    background-color: #04C2C9;
-    border-color: #04C2C9;
-    color: white; }
-    .hover-button:hover .icon {
-      color: white;
-      transform: rotate(90deg); }
+  margin-right: 30px;
+}
+.hover-button .icon {
+  top: 16px;
+  transition: transform 0.3s;
+  position: absolute;
+  right: 15px;
+  vertical-align: middle;
+  color: white;
+}
+.hover-button:hover {
+  background-color: #04c2c9;
+  border-color: #04c2c9;
+  color: white;
+}
+.hover-button:hover .icon {
+  color: white;
+  transform: rotate(90deg);
+}
+
+/*# sourceMappingURL=HoverButton.css.map */

@@ -3,6 +3,7 @@ body {
   font-family: ralewayregular, sans-serif;
   background-color: #edf3f8;
 }
+/*
 .skype-button-position {
   position: fixed !important;
   left: 20px;
@@ -10,7 +11,8 @@ body {
   z-index: 9999;
   .lwc-chat-button {
     position: relative;
-    right: 30px;
+    right: unset;
+    left: 20px;
   }
 }
 
@@ -19,9 +21,11 @@ body {
   left:20px !important;
   right: unset !important;
 }
+*/
+
 .showAfter10Secs {
   animation-name: showUpKeyframe;
-  animation-delay: 3s;
+  animation-delay: 4s;
   animation-duration: 1s;
   visibility: hidden;
   opacity: 0;

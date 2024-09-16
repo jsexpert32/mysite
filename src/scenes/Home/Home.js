@@ -4,6 +4,7 @@ import HomeSection from './sections/Home/Home';
 import Projects from './sections/Projects/Projects';
 import Contact from './sections/Contact/Contact';
 import Footer from './sections/Footer/Footer';
+
 const Home = props => (
   <React.Fragment>
     <HomeSection />

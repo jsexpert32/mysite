@@ -1,110 +1,145 @@
 .my-shuffle-container {
   position: relative;
-  overflow: hidden; }
-  .my-shuffle-container .picture-item {
-    margin-left: 0;
-    margin-top: 24px; }
-    .my-shuffle-container .picture-item .aspect {
-      border: 3px solid #191919;
-      box-shadow: 0 0 3px #555; }
-    .my-shuffle-container .picture-item .picture-item__inner {
-      background: #ecf0f1;
-      height: 100%;
-      overflow: hidden;
-      position: relative; }
-    .my-shuffle-container .picture-item .picture-item-overlay {
-      transition: ease-in .15s; }
-    .my-shuffle-container .picture-item:hover .picture-item-overlay {
-      background-color: black;
-      opacity: 0.85; }
-  .my-shuffle-container .aspect {
-    height: 0;
-    overflow: hidden;
-    padding-bottom: 100%;
-    position: relative;
-    width: 100%; }
-  .my-shuffle-container .aspect--16x9 {
-    padding-bottom: 56.25%; }
-  .my-shuffle-container .aspect > div, .my-shuffle-container .aspect__inner {
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0; }
-  .my-shuffle-container .picture-item img {
-    -o-object-fit: cover;
-    height: 100%;
-    max-width: none;
-    object-fit: cover; }
-  .my-shuffle-container .picture-item img {
-    display: block;
-    width: 100%; }
-  .my-shuffle-container .picture-item-hover {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    transition: all ease-in .15s;
-    opacity: 0; }
-    .my-shuffle-container .picture-item-hover:hover {
-      opacity: 1.0; }
-    .my-shuffle-container .picture-item-hover .picture-title {
-      font-family: ralewaybold, sans-serif;
-      font-size: 2em;
-      color: white;
-      text-shadow: 0 0 1px #ED412D;
-      margin-top: 10%; }
-      @media only screen and (max-width: 761px) and (min-width: 420px) {
-        .my-shuffle-container .picture-item-hover .picture-title {
-          font-size: 1.3em; } }
-    .my-shuffle-container .picture-item-hover .picture-skills {
-      font-family: ralewayregular, sans-serif;
-      font-size: 1em;
-      color: white; }
-      @media only screen and (max-width: 761px) and (min-width: 420px) {
-        .my-shuffle-container .picture-item-hover .picture-skills {
-          font-size: 1.1em; } }
-    .my-shuffle-container .picture-item-hover .learn-more {
-      position: absolute;
-      bottom: 10px;
-      padding: 2% 8%;
-      color: white;
-      border: 2px solid #E31B6D;
-      transition: all 0.3s ease-in-out; }
-      @media only screen and (max-width: 761px) and (min-width: 420px) {
-        .my-shuffle-container .picture-item-hover .learn-more {
-          padding: 1.5% 7%;
-          font-size: 0.9em; } }
-      .my-shuffle-container .picture-item-hover .learn-more:hover {
-        color: white;
-        cursor: pointer;
-        background-color: #E31B6D; }
+  overflow: hidden;
+}
+.my-shuffle-container .picture-item {
+  margin-left: 0;
+  margin-top: 24px;
+}
+.my-shuffle-container .picture-item .aspect {
+  border: 3px solid #191919;
+  box-shadow: 0 0 3px #555;
+}
+.my-shuffle-container .picture-item .picture-item__inner {
+  background: #ecf0f1;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.my-shuffle-container .picture-item .picture-item-overlay {
+  transition: ease-in 0.15s;
+}
+.my-shuffle-container .picture-item:hover .picture-item-overlay {
+  background-color: black;
+  opacity: 0.85;
+}
+.my-shuffle-container .aspect {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 100%;
+  position: relative;
+  width: 100%;
+}
+.my-shuffle-container .aspect--16x9 {
+  padding-bottom: 56.25%;
+}
+.my-shuffle-container .aspect > div,
+.my-shuffle-container .aspect__inner {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.my-shuffle-container .picture-item img {
+  -o-object-fit: cover;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+}
+.my-shuffle-container .picture-item img {
+  display: block;
+  width: 100%;
+}
+.my-shuffle-container .picture-item-hover {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: all ease-in 0.15s;
+  opacity: 0;
+}
+.my-shuffle-container .picture-item-hover:hover {
+  opacity: 1;
+}
+.my-shuffle-container .picture-item-hover .picture-title {
+  font-family: ralewaybold, sans-serif;
+  font-size: 2em;
+  color: white;
+  text-shadow: 0 0 1px #ed412d;
+  margin-top: 10%;
+}
+@media only screen and (max-width: 761px) and (min-width: 420px) {
+  .my-shuffle-container .picture-item-hover .picture-title {
+    font-size: 1.3em;
+  }
+}
+.my-shuffle-container .picture-item-hover .picture-skills {
+  font-family: ralewayregular, sans-serif;
+  font-size: 1em;
+  color: white;
+}
+@media only screen and (max-width: 761px) and (min-width: 420px) {
+  .my-shuffle-container .picture-item-hover .picture-skills {
+    font-size: 1.1em;
+  }
+}
+.my-shuffle-container .picture-item-hover .learn-more {
+  position: absolute;
+  bottom: 10px;
+  padding: 2% 8%;
+  color: white;
+  border: 2px solid #e31b6d;
+  transition: all 0.3s ease-in-out;
+}
+@media only screen and (max-width: 761px) and (min-width: 420px) {
+  .my-shuffle-container .picture-item-hover .learn-more {
+    padding: 1.5% 7%;
+    font-size: 0.9em;
+  }
+}
+.my-shuffle-container .picture-item-hover .learn-more:hover {
+  color: white;
+  cursor: pointer;
+  background-color: #e31b6d;
+}
 
 .project-detail-modal {
-  background-color: #edf3f8; }
-  .project-detail-modal .modal-content {
-    background-color: #edf3f8; }
-  .project-detail-modal .title {
-    font-family: ralewaybold, sans-serif;
-    font-size: 2.0em;
-    color: #444;
-    padding: 0 10px; }
-  .project-detail-modal .sub-title {
-    font-size: 1.0em;
-    color: #999;
-    padding: 0 10px; }
-  .project-detail-modal .divider {
-    height: 1px;
-    width: 100%;
-    margin: 10px 0 20px 0;
-    background: #ddd;
-    padding: 0 10px; }
-  .project-detail-modal .modal-footer {
-    border-color: #ddd; }
-  .project-detail-modal .description {
-    padding: 0 10px; }
-  .project-detail-modal .visit-button {
-    background: #007bff;
-    color: white;
-    padding: 0.375rem 0.75rem; }
-    .project-detail-modal .visit-button:hover {
-      text-decoration: none; }
+  background-color: #edf3f8;
+}
+.project-detail-modal .modal-content {
+  background-color: #edf3f8;
+}
+.project-detail-modal .title {
+  font-family: ralewaybold, sans-serif;
+  font-size: 2em;
+  color: #444;
+  padding: 0 10px;
+}
+.project-detail-modal .sub-title {
+  font-size: 1em;
+  color: #999;
+  padding: 0 10px;
+}
+.project-detail-modal .divider {
+  height: 1px;
+  width: 100%;
+  margin: 10px 0 20px 0;
+  background: #ddd;
+  padding: 0 10px;
+}
+.project-detail-modal .modal-footer {
+  border-color: #ddd;
+}
+.project-detail-modal .description {
+  padding: 0 10px;
+}
+.project-detail-modal .visit-button {
+  background: #007bff;
+  color: white;
+  padding: 0.375rem 0.75rem;
+}
+.project-detail-modal .visit-button:hover {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=PhotoGrid.css.map */

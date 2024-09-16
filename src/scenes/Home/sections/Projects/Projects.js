@@ -39,8 +39,8 @@ class Projects extends React.Component {
     return (
       <Element
         id="projects-section"
-        className={['projects-section', hideOrShow].join(' ') }
-        >
+        className={['projects-section', hideOrShow].join(' ')}
+      >
         <Container>
           <div className="title wow bounceInLeft animated">Projects</div>
           <div className="title-bar wow bounceInLeft animated" />

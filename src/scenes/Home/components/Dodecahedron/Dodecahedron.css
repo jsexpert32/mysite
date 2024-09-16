@@ -1,0 +1,102 @@
+.dodecahedron-container {
+  position: absolute;
+  width: 150px;
+  top: 140px;
+  opacity: 0.7;
+  display: flex;
+  justify-content: right;
+  cursor: pointer;
+}
+@media only screen and (max-width: 991px) {
+  .dodecahedron-container {
+    align-items: center;
+    justify-content: center;
+  }
+}
+.dodecahedron-container .view {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  perspective: 400;
+}
+.dodecahedron-container .LetterE {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1;
+  font-family: ralewaybold;
+  font-weight: bold;
+  font-size: 4em;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+.dodecahedron-container .plane {
+  width: 150px;
+  height: 150px;
+  transform-style: preserve-3d;
+}
+.dodecahedron-container .plane.main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transform: rotateX(60deg) rotateZ(-30deg);
+  animation: rotate 20s infinite linear;
+}
+.dodecahedron-container .plane .circle {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  transform-style: preserve-3d;
+  border-radius: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 0 60px #04c2c9, inset 0 0 60px #04c2c9;
+}
+.dodecahedron-container .plane .circle:before,
+.dodecahedron-container .plane .circle:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 10%;
+  height: 10%;
+  border-radius: 100%;
+  background: #04c2c9;
+  box-sizing: border-box;
+  box-shadow: 0 0 60px 2px #04c2c9;
+  display: none;
+}
+.dodecahedron-container .plane .circle:before {
+  transform: translateZ(-170px);
+}
+.dodecahedron-container .plane .circle::after {
+  transform: translateZ(170px);
+}
+.dodecahedron-container .plane .circle:nth-child(1) {
+  transform: rotateZ(72deg) rotateX(63.435deg);
+}
+.dodecahedron-container .plane .circle:nth-child(2) {
+  transform: rotateZ(144deg) rotateX(63.435deg);
+}
+.dodecahedron-container .plane .circle:nth-child(3) {
+  transform: rotateZ(216deg) rotateX(63.435deg);
+}
+.dodecahedron-container .plane .circle:nth-child(4) {
+  transform: rotateZ(288deg) rotateX(63.435deg);
+}
+.dodecahedron-container .plane .circle:nth-child(5) {
+  transform: rotateZ(360deg) rotateX(63.435deg);
+}
+
+/*# sourceMappingURL=Dodecahedron.css.map */

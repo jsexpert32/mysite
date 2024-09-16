@@ -1,39 +1,49 @@
 .welcome-component {
   width: 100%;
   text-align: center;
-  padding-top: 100px; }
-  @media only screen and (min-width: 768px) {
-    .welcome-component {
-      font-size: 1.0em; } }
-  @media only screen and (min-width: 992px) {
-    .welcome-component {
-      width: 55%;
-      text-align: left;
-      font-size: 1.0em; } }
-  .welcome-component .typist-container {
-    color: #fff;
-    font-size: 2.0em; }
-    .welcome-component .typist-container div {
-      -webkit-font-smoothing: antialiased;
-      -moz-font-smoothing: antialiased;
-      will-change: transform; }
-  .welcome-component .highlight {
-    color: #E31B6D; }
-  .welcome-component .title {
-    font-family: ralewayregular, sans-serif;
-    font-weight: normal;
-    font-size: 1.0em !important;
-    color: #fff;
+  padding-top: 100px;
+}
+@media only screen and (min-width: 768px) {
+  .welcome-component {
+    font-size: 1em;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .welcome-component {
+    width: 55%;
     text-align: left;
-    z-index: 10; }
-  .welcome-component .quote {
-    font-family: ralewayregular, sans-serif;
-    font-size: 0.7em;
-    color: #ddd;
-    text-align: left;
-    font-weight: normal; }
+    font-size: 1em;
+  }
+}
+.welcome-component .typist-container {
+  color: #fff;
+  font-size: 2em;
+}
+.welcome-component .highlight {
+  color: #e31b6d;
+}
+.welcome-component .title {
+  font-family: ralewayregular, sans-serif;
+  font-weight: normal;
+  font-size: 1em !important;
+  color: #fff;
+  text-align: left;
+  z-index: 10;
+}
+.welcome-component .quote {
+  font-family: ralewayregular, sans-serif;
+  font-size: 0.7em;
+  color: #ddd;
+  text-align: left;
+  font-weight: normal;
+}
+.welcome-component .button-container {
+  margin: 30px 0;
+}
+@media only screen and (max-width: 991px) {
   .welcome-component .button-container {
-    margin: 30px 0; }
-    @media only screen and (max-width: 991px) {
-      .welcome-component .button-container {
-        font-size: 1.2em; } }
+    font-size: 1.2em;
+  }
+}
+
+/*# sourceMappingURL=Welcome.css.map */

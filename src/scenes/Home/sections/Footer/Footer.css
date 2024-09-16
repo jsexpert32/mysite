@@ -1,53 +1,118 @@
 .footer-section {
-  padding: 0px 0 30px 0;
+  padding: 70px 0 30px 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #1B242F;
+  background-color: #262b2e;
   flex-direction: column;
   position: relative;
-  overflow: hidden; }
-  .footer-section .diagonal-shadow {
-    z-index: 1;
-    padding-top: 6em;
-    background: #1B242F; }
-  .footer-section .connect-me {
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-    .footer-section .connect-me .social-icon {
-      margin: 0 20px;
-      color: white; }
-      .footer-section .connect-me .social-icon:hover {
-        color: #04C2C9; }
-      .footer-section .connect-me .social-icon span {
-        font-size: 2.0em;
-        cursor: pointer; }
-  .footer-section .copyright {
-    display: flex;
-    color: #8F9AA7;
-    font-size: 0.9em;
-    text-align: center;
-    margin-top: 20px; }
-    .footer-section .copyright .year {
-      color: #E31B6D;
-      margin-left: 0.5em; }
+  overflow: hidden;
+}
+.footer-section .diagonal-shadow {
+  z-index: 1;
+  padding-top: 6em;
+  background: #262b2e;
+}
+.footer-section .diagonal-shadow:before,
+.footer-section .diagonal-shadow:after {
+  position: absolute;
+  content: '';
+  pointer-events: none;
+  top: 0;
+  left: -25%;
+  z-index: -1;
+  width: 150%;
+  height: 75%;
+  background: inherit;
+  -webkit-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+.footer-section .diagonal-shadow:before {
+  height: 50%;
+  background: #edf3f8;
+  -webkit-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+  -webkit-transform-origin: 3% 0;
+  transform-origin: 3% 0;
+  z-index: 1000;
+}
+.footer-section .diagonal-shadow:after {
+  background-color: #404548;
+  height: 50%;
+}
+.footer-section .connect-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-section .connect-me .social-icon {
+  margin: 0 20px;
+  color: white;
+}
+.footer-section .connect-me .social-icon:hover {
+  color: #04c2c9;
+}
+.footer-section .connect-me .social-icon span {
+  font-size: 2em;
+  cursor: pointer;
+}
+.footer-section .copyright {
+  display: flex;
+  color: #8f9aa7;
+  font-size: 0.9em;
+  text-align: center;
+  margin-top: 20px;
+}
+.footer-section .copyright .year {
+  color: #e31b6d;
+  margin-left: 0.5em;
+}
+.footer-section .move-top-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 2.6em;
+  z-index: 100;
+}
+@media only screen and (max-width: 1500px) {
   .footer-section .move-top-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: -0.5em;
-    z-index: 100; }
-    .footer-section .move-top-container .move-top {
-      background-color: #E31B6D;
-      color: white;
-      padding: 15px 8px; }
-      @media only screen and (max-width: 781px) {
-        .footer-section .move-top-container .move-top {
-          padding-top: 10px; } }
-      .footer-section .move-top-container .move-top:hover {
-        cursor: pointer;
-        color: white; }
-      .footer-section .move-top-container .move-top span {
-        font-size: 1.4em; }
+    top: 3em;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .footer-section .move-top-container {
+    top: 3.6em;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .footer-section .move-top-container {
+    top: 4.6em;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .footer-section .move-top-container {
+    top: 5.6em;
+  }
+}
+.footer-section .move-top-container .move-top {
+  background-color: #e31b6d;
+  color: white;
+  padding: 15px 8px;
+}
+@media only screen and (max-width: 781px) {
+  .footer-section .move-top-container .move-top {
+    padding-top: 10px;
+  }
+}
+.footer-section .move-top-container .move-top:hover {
+  cursor: pointer;
+  color: white;
+}
+.footer-section .move-top-container .move-top span {
+  font-size: 2.4em;
+}
+
+/*# sourceMappingURL=Footer.css.map */

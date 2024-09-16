@@ -10,7 +10,8 @@ import { Link } from 'react-scroll';
 
 const defaultDelay = window.defaultDelay;
 const update = window.update;
-const SkypeWebControl = window.SkypeWebControl;
+/*const Skype = window.Skype;
+const SkypeWebControl = window.SkypeWebControl;*/
 class AboutMe extends React.Component {
   constructor(props) {
     super(props);
@@ -19,7 +20,7 @@ class AboutMe extends React.Component {
       bShow: false
     };
     this.showComponent = this.showComponent.bind(this);
-    this.startSkypeChat = this.startSkypeChat.bind(this);
+    //this.startSkypeChat = this.startSkypeChat.bind(this);
   }
 
   showComponent() {
@@ -36,12 +37,14 @@ class AboutMe extends React.Component {
     //update();
   }
 
+  /*
   startSkypeChat() {
     SkypeWebControl.SDK.Chat.startChat({
       ConversationType: 'person',
       ConversationId: 'live:developer1215'
     });
   }
+  */
   render() {
     let hideOrShow = 'hidden';
     if (this.state.bShow === true) {
@@ -102,17 +105,14 @@ class AboutMe extends React.Component {
                 </div>
                 <div className="photo-title">Who is this guy?</div>
                 <div className="photo-description">
-                  I am a young-passionated{' '}
-                  <span className="decorate">
-                    {' '}
-                    Full Stack developer, Team Leader
-                  </span>{' '}
-                  with 8+years experience, who consider my self as a
-                  quick-learner and always study new technologies for the best
-                  practice and quality of work.
+                  I am a young-motivated{' '}
+                  <span className="decorate"> Full Stack developer</span> with
+                  8+years experience, who consider my self as a quick-learner
+                  and always study new technologies for the best practice and
+                  quality of work.
                   <div className="reach-out-me">
-                    A satisfied client is the best business strategy of all to
-                    me.<br />
+                    If you are someone who loves to make a professional
+                    acquaintances,
                     <Link
                       to="contact-section"
                       className="page-scroll decorate"
@@ -120,47 +120,37 @@ class AboutMe extends React.Component {
                       smooth={true}
                       duration={500}
                     >
-                      &nbsp; Please share your ideas&nbsp;
+                      &nbsp;reach out to me&nbsp;
                     </Link>
-                    and I will make it to real!
+                    to talk about technology, innovation or tennis!
                   </div>
                 </div>
                 <div className="connect-me">
                   <a
                     className="social-icon"
-                    rel="noopener noreferrer"
                     target="_blank"
-                    href="https://www.linkedin.com/in/shaorun-zhang-350988129"
+                    href="https://www.linkedin.com/in/david-chan-76112630a/"
                   >
                     {' '}
                     <span className="fa fa-linkedin" />{' '}
                   </a>
                   <a
                     className="social-icon"
-                    rel="noopener noreferrer"
                     target="_blank"
-                    href="https://www.facebook.com/profile.php?id=100018282452111"
-                  >
-                    {' '}
-                    <span className="fa fa-facebook" />{' '}
-                  </a>
-                  <a
-                    className="social-icon"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    href="https://github.com/JSExpert32"
+                    href="https://github.com/jsexpert32"
                   >
                     {' '}
                     <span className="fa fa-github" />{' '}
                   </a>
+                  {/*
                   <a className="social-icon" onClick={this.startSkypeChat}>
                     <span className="fa fa-skype" />
                   </a>
+                  */}
                   <a
                     className="social-icon"
-                    rel="noopener noreferrer"
                     target="_blank"
-                    href="mailto:developer1215@outlook.com"
+                    href="mailto:davidchan881219@gmail.com"
                   >
                     {' '}
                     <span className="fa fa-envelope" />{' '}
@@ -169,24 +159,36 @@ class AboutMe extends React.Component {
               </Col>
               <Col lg="6" xs="12">
                 <div className="skills-container">
-                  <Skill rate={85} label="HTML/CSS" />
-                  <Skill rate={80} label="SASS/LESS" />
+                  <Skill rate={90} label="React/Next" />
+                  <Skill rate={90} label="Vue/Nuxt" />
                   <Skill rate={80} label="Angular" />
-                  <Skill rate={80} label="React" />
-                  <Skill rate={95} label="Vue" />
-                  <Skill rate={85} label="Node.js" />
-                  <Skill rate={82} label="Express" />
-                  <Skill rate={70} label="Ruby/Rails" />
-                  <Skill rate={90} label="PHP" />
-                  <Skill rate={82} label="Database" />
-                  <Skill rate={70} label="Android" />
-                  <Skill rate={60} label="AR/VR" />
-                  <Skill rate={50} label="Photoshop" />
+                  <Skill rate={85} label="CSS/SCSS" />
+                  <Skill rate={90} label="HTML" />
+                  <Skill rate={80} label="Node.js" />
+                  <Skill rate={90} label="Nest.js" />
+                  <Skill rate={85} label="PHP" />
+                  <Skill rate={80} label="Python" />
+                  <Skill rate={60} label="AI/ML" />
+                  <Skill rate={80} label="E-commerce" />
+                  <Skill rate={80} label="Ethereum" />
+                  <Skill rate={85} label="Web3.js" />
+                  <Skill rate={80} label="Ethers.js" />
                 </div>
               </Col>
             </Row>
           </Container>
         </FlowBackground>
+        <svg
+          id="curveUpColor"
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          width="100%"
+          height="100"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+        >
+          <path d="M0 100 C 20 0 50 0 100 100 Z" />
+        </svg>
       </Element>
     );
   }

@@ -6,88 +6,114 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
-  .about-me .flow-background {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: #edf3f8; }
-  .about-me svg {
-    display: block;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    transform: translateZ(0px); }
-  .about-me .pentahedron {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    fill: #3E82F7; }
-  .about-me .point {
-    fill: #8491A3; }
-  .about-me .rhombus {
-    fill: #2DA94F;
-    stroke: #2DA94F; }
-  .about-me .x {
-    fill: #FDBD00; }
-  .about-me .circle {
-    fill: #ED412D; }
-  .about-me .title {
-    font-family: ralewayregular, sans-serif;
-    font-size: 3em;
-    text-align: center;
-    color: #444649;
-    text-shadow: 0 0 1px #444649; }
-  .about-me .title-bar {
-    width: 90px;
-    border-bottom: 4px solid #444649;
-    margin: 0 auto;
-    animation-delay: 0.15s;
-    margin-bottom: 100px;
-    box-shadow: 0 0 1px #444649; }
-  .about-me .photo-container {
-    display: inline-block;
-    margin: 0 auto; }
-  .about-me .photo-title {
-    font-family: ralewaybold, sans-serif;
-    font-size: 2.0em;
-    text-align: center;
-    font-style: italic; }
-  .about-me .photo-description {
-    padding-top: 15px;
-    font-size: 1.1em; }
-    .about-me .photo-description .decorate {
-      color: #009ADA; }
-      .about-me .photo-description .decorate.page-scroll {
-        cursor: pointer; }
-        .about-me .photo-description .decorate.page-scroll:hover {
-          color: #009ADA; }
-    .about-me .photo-description .reach-out-me {
-      padding-top: 10px;
-      font-size: 0.85em; }
-  .about-me .about-me-section {
-    padding-top: 50px; }
-    .about-me .about-me-section .connect-me {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: 40px; }
-      .about-me .about-me-section .connect-me .social-icon {
-        margin: 0 20px;
-        color: #212529; }
-        .about-me .about-me-section .connect-me .social-icon span {
-          font-size: 2.5em;
-          cursor: pointer; }
-  @media only screen and (max-width: 992px) {
-    .about-me .skills-container {
-      margin-top: 30px; } }
-  .about-me #curveUpColor {
-    position: absolute;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    fill: #262b2e;
-    stroke: #262b2e;
-    bottom: 0;
-    width: 100%; }
+  align-items: center;
+}
+.about-me .flow-background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #edf3f8;
+}
+.about-me svg {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  transform: translateZ(0px);
+}
+.about-me .pentahedron {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  fill: #3e82f7;
+}
+.about-me .point {
+  fill: #8491a3;
+}
+.about-me .rhombus {
+  fill: #2da94f;
+  stroke: #2da94f;
+}
+.about-me .x {
+  fill: #fdbd00;
+}
+.about-me .circle {
+  fill: #ed412d;
+}
+.about-me .title {
+  font-family: ralewayregular, sans-serif;
+  font-size: 3em;
+  text-align: center;
+  color: #444649;
+  text-shadow: 0 0 1px #444649;
+}
+.about-me .title-bar {
+  width: 90px;
+  border-bottom: 4px solid #444649;
+  margin: 0 auto;
+  animation-delay: 0.15s;
+  margin-bottom: 100px;
+  box-shadow: 0 0 1px #444649;
+}
+.about-me .photo-container {
+  display: inline-block;
+  margin: 0 auto;
+}
+.about-me .photo-title {
+  font-family: ralewaybold, sans-serif;
+  font-size: 2em;
+  text-align: center;
+  font-style: italic;
+}
+.about-me .photo-description {
+  padding-top: 15px;
+  font-size: 1.1em;
+}
+.about-me .photo-description .decorate {
+  color: #e31b6d;
+}
+.about-me .photo-description .decorate.page-scroll {
+  cursor: pointer;
+}
+.about-me .photo-description .decorate.page-scroll:hover {
+  color: #e31b6d;
+}
+.about-me .photo-description .reach-out-me {
+  padding-top: 10px;
+  font-size: 0.85em;
+}
+.about-me .about-me-section {
+  padding-top: 50px;
+}
+.about-me .about-me-section .connect-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+.about-me .about-me-section .connect-me .social-icon {
+  margin: 0 20px;
+  color: #212529;
+}
+.about-me .about-me-section .connect-me .social-icon span {
+  font-size: 2.5em;
+  cursor: pointer;
+}
+@media only screen and (max-width: 992px) {
+  .about-me .skills-container {
+    margin-top: 30px;
+  }
+}
+.about-me #curveUpColor {
+  position: absolute;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  fill: #262b2e;
+  stroke: #262b2e;
+  bottom: 0;
+  width: 100%;
+}
+
+/*# sourceMappingURL=AboutMe.css.map */

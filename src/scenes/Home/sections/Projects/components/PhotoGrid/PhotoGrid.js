@@ -2,7 +2,6 @@ import React from 'react';
 import { Button, Modal, ModalBody, ModalFooter } from 'reactstrap';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.css';
-import 'react-responsive-carousel/lib/styles/main.css';
 import './PhotoGrid.css';
 import PhotoGridFilter from '../PhotoGridFilter/PhotoGridFilter';
 
@@ -10,48 +9,146 @@ const Shuffle = window.Shuffle;
 const projects = [
   {
     id: 0,
-    image: 'ztorie',
-    skills: 'VueJS + ReactJS + Laravel',
-    groups: ['javascript', 'php'],
-    title: 'Ztorie Widget Creator',
+    image: 'zenni',
+    skills: 'Vue.js/Nuxt.js + React.js + Node.js + Magento',
+    groups: ['javascript', 'nodejs', 'php'],
+    title: 'Zenni Optical',
     isVisit: true,
-    imageCounts: 4,
-    titleDetail: 'alp.app.ztorie.com',
-    subtitle: 'Ztorie Widget Creator',
-    url: 'https://alp.app.ztorie.com',
+    imageCounts: 8,
+    titleDetail: 'zennioptical.com',
+    subtitle: 'Eyewear industry’s leading online retailer',
+    url: 'https://www.zennioptical.com/',
     description:
-      'Ztorie is like instagram story maker.  User can create any widget by adding video , image , texts , music , effects and move,drag,rotate elements and embed it to any website you want. '
+      "Zenni Optical provides the most affordable eyeglasses to people all over the world, the highest-quality optical lenses to customers, and makes it easy to order eyeglasses online.<br/><br/>•	Spearheaded the successful implementation of B2B Logic for product order and shipping processes, as well as checkout functionalities, resulting in a 25% reduction in order processing time.<br/><br/>•	Engineered a cutting-edge fulfillment system tailored for VR Prescription Lenses customized for the Meta Quest 3 Headset through a strategic partnership with Meta, leading to a 30% increase in product fulfillment efficiency.<br/><br/>•	Utilized Algolia's services to revolutionize our search capabilities, enhancing efficiency, flexibility, and insights. Implemented a self-learning AI-driven Search & Search Analytics system, resulting in a 40% improvement in search accuracy.<br/><br/>•	Pioneered the extraction of prescription information from images using GCP (OCR, Google AI) technology. Implemented a glass frame recommendation system utilizing the 3rd party Luna SDK to capture biometric data, leading to a 50% increase in personalized product recommendations.<br/><br/>•	Successfully integrated multiple payment methods, including Credit/Debit Cards, Apple Pay, Google Pay, and Paypal, using Braintree, expanding our payment options and increasing conversion rates by 20%.<br/>"
   },
   {
     id: 1,
-    image: 'quillon',
-    skills: 'ReactJS + BlockExplore API',
-    groups: ['javascript', 'nodejs'],
-    title: 'Quillon',
+    image: 'rarible',
+    skills: 'React.js/Web3.js/Nest.js/IPFS + Solidity',
+    groups: ['javascript', 'blockchain', 'nodejs'],
+    title: 'Rarible',
     isVisit: true,
-    imageCounts: 4,
-    titleDetail: 'Quillon.co',
-    subtitle: 'Quillon Marketing Portal',
-    url: 'http://quillon.co',
+    imageCounts: 5,
+    titleDetail: 'Rarible.com',
+    subtitle: 'Rarible NFT MarketPlace',
+    url: 'https://rarible.com/',
     description:
-      "Quillon Currency Marketing portal. This web portal is connected to the back-end BlockExplorer api. Used ReactJS, Redux, React-Redux, Redux-Sagga packages. I've also developed BlockExplorer"
+      'Rarible is a software allowing digital artists and creators to issue and sell custom crypto assets that represent ownership in their digital work. </br> Delivered effective support on Rarible, including formulation and selling of Single Collectible (ERC721) and Multiple Collectible (ERC1155) while using ReactJS, Next.js, Web3.js , IPFS.'
   },
   {
     id: 2,
-    image: 'howtube',
-    skills: 'PHP + Javascript',
-    groups: ['php'],
-    title: 'Howtube',
+    image: 'satellite',
+    skills: 'Vue/Nuxt/Solana/IPFS/Textile/Libp2p',
+    groups: ['javascript', 'blockchain', 'nodejs'],
+    title: 'Satellite IM',
     isVisit: true,
-    imageCounts: 5,
-    titleDetail: 'Howtube.com',
-    subtitle: 'Video platform that contains wide range of topics',
-    url: 'https://www.howtube.com/',
+    imageCounts: 7,
+    titleDetail: 'core.satellite.im',
+    subtitle: 'Decentralized Chat application based on Solana',
+    url: 'https://core.satellite.im/',
     description:
-      'howtube is a video hosting platform that exists to help video creators of all shapes and sizes connect with audiences in the most authentic manner possible and appropriately monetize their content at the same time.'
+      'Satellite Core is a decentralized p2p voice, video, and text chat application based on Solana, IPFS.'
   },
   {
     id: 3,
+    image: 'burnt',
+    skills: 'React/Solana/Metaplex/Anchor/Web3',
+    groups: ['javascript', 'blockchain', 'nodejs'],
+    title: 'Burnt Finance',
+    isVisit: true,
+    imageCounts: 4,
+    titleDetail: 'burnt.com',
+    subtitle: 'NFT marketplace based on Solana',
+    url: 'https://www.burnt.com/',
+    description:
+      'Burnt Finance provides an intuitive user-friendly interface to create every project type in a fully decentralized environment.'
+  },
+  {
+    id: 4,
+    image: 'xsigmadefi',
+    skills: 'React.js/Web3.js',
+    groups: ['javascript', 'blockchain'],
+    title: 'xSigma DeFi',
+    isVisit: true,
+    imageCounts: 3,
+    titleDetail: 'xsigma.fi',
+    subtitle: 'xSigma DeFi',
+    url: 'https://xsigma.fi/',
+    description:
+      'xSigma Finance is a decentralized stablecoin exchange that provides the cheapest transactions for customers and a mining platform for liquidity providers.</br> Interacted with special smart contract that holds pool of three stablecoins (DAI, USD, and USDT) on xSigma DeFi and enhanced wallet choosing logic.'
+  },
+  {
+    id: 5,
+    image: 'xsigma',
+    skills: 'React.js/Web3.js/bnc-onboard + Nest.js',
+    groups: ['javascript', 'nodejs', 'blockchain'],
+    title: 'xSigma NFT',
+    isVisit: true,
+    imageCounts: 5,
+    titleDetail: 'xSigma NFT',
+    subtitle: 'xSigma NFT MarketPlace',
+    url: 'https://maximnft.com/',
+    description:
+      '• Assist various Ethereum wallets including MetaMask , Fortamic, Torus, Coinbase and Trezor </br> • Create single/multiple collectible (ERC721/ERC1155) </br> • Direct Sale/Auction/Resale '
+  },
+  {
+    id: 6,
+    image: 'onpinverifeye',
+    skills: 'Laravel + Vue/Vuex + Nest.js',
+    groups: ['javascript', 'php', 'nodejs'],
+    title: 'Verifeye',
+    isVisit: true,
+    imageCounts: 4,
+    titleDetail: 'verifeye.info',
+    subtitle: 'On-pin Verifeye',
+    url: 'https://verifeye.info/',
+    description:
+      'On-Pin has been a golf course focused technology company for over 20 years. </br> •	Managing Facility/Course/Station/Assets , Members/Visitors , Geofence/Ad  </br> •	Established Real-time Golf Cart Tracking System using Rfid </br> •	Detail analyzed reports for Players/Rounds/Cart/Pace of Play/ Stations '
+  },
+  {
+    id: 7,
+    image: 'caw',
+    skills: 'Vue.js + Nuxt.js',
+    groups: ['javascript'],
+    title: 'Carewindow',
+    isVisit: true,
+    imageCounts: 3,
+    titleDetail: 'carewindow.com',
+    subtitle: 'Skilled Nursing - Assisted Living Facilities',
+    url: '',
+    description:
+      'Carewindow is resource to bridge families with residential rehabilitation and elderly care providers.'
+  },
+  {
+    id: 8,
+    image: 'oohyah',
+    skills: 'AngularJS + PHP',
+    groups: ['php', 'javascript'],
+    title: 'Oohyah',
+    isVisit: true,
+    imageCounts: 7,
+    titleDetail: 'Oohyah.com',
+    subtitle: 'Music Revalued A Fan Supported Streaming Platform',
+    url: '',
+    description:
+      'Oohyah is Music Revalued A Fan Supported Streaming Platform. Provide powerful filter search and easy subscription system with millions of popular songs. Used AngularJS for front-end and Laravel5 for back-end.'
+  },
+  {
+    id: 9,
+    image: 'kindertale',
+    skills: 'PHP + Javascript',
+    groups: ['php'],
+    title: 'Kindertales',
+    isVisit: true,
+    imageCounts: 5,
+    titleDetail: 'Kindertales.com',
+    subtitle: 'Complete Childcare Management',
+    url: 'http://kindertales.com/',
+    description:
+      'Easy to use childecare management system. Powerful tools for care providers and Parents stay connected to their child from anywhere. Easy online billing, Communication, Very powerful dynamic form builder and CRM are provided. Both android and ios app are ready. Used PHP using own built-in framework'
+  },
+  {
+    id: 10,
     image: 'TuftAndNeedle',
     skills: 'AngularJS + PHP',
     groups: ['php', 'javascript'],
@@ -65,21 +162,35 @@ const projects = [
       'Tuft and Needle is set to do to the mattress business what Warby Parker did for eyewear. Used AngularJS for front-end and Laravel5 for back-end.'
   },
   {
-    id: 4,
-    image: 'Kordio',
-    skills: 'NodeJS + ReactJS',
-    groups: ['javascript', 'nodejs'],
-    title: 'Kordio',
+    id: 11,
+    image: 'ztorie',
+    skills: 'VueJS',
+    groups: ['javascript'],
+    title: 'Ztorie Widget Creator',
     isVisit: true,
-    imageCounts: 2,
-    titleDetail: 'kordio.com',
-    subtitle: 'Decentralized e-commerce market platform',
-    url: 'https://kordio.com',
+    imageCounts: 4,
+    titleDetail: 'Ztorie Widget Creator',
+    subtitle: 'Ztorie Widget Creator',
+    url: '',
     description:
-      'Kordio connects you to your favorite merchants and gives you access to special rewards and discounts.'
+      'Ztorie is like instagram story maker.  User can create any widget by adding video , image , texts , music , effects and move,drag,rotate elements and embed it to any website you want. '
   },
   {
-    id: 5,
+    id: 12,
+    image: 'omnibazaar',
+    skills: 'NodeJS + ReactJS',
+    groups: ['javascript', 'nodejs', 'blockchain'],
+    title: 'Omnibazaar',
+    isVisit: true,
+    imageCounts: 3,
+    titleDetail: 'Omnibazaar.com',
+    subtitle: 'Decentralized e-commerce market platform',
+    url: 'http://omnibazaar.com/',
+    description:
+      'Omnibazaar is decentralized e-commerce marketing platform. You can list products and services in the marketplace and accomplish transaction with crypto coins. Used ElectronJS + ReactJS to build cross platform desktop applications'
+  },
+  {
+    id: 13,
     image: 'shoponya',
     skills: 'PHP ',
     groups: ['php'],
@@ -93,77 +204,23 @@ const projects = [
       'E-commerce market place to let you spend less time marketing and more time filling orders. Visual tag based search. Integrated stripe payment gateway.'
   },
   {
-    id: 6,
-    image: 'MedLearnity',
-    skills: 'Vue.js + Laravel',
-    groups: ['javascript', 'php'],
-    title: 'Medical Learning Site',
+    id: 14,
+    image: 'healthwallet',
+    skills: 'Ionic/Angular',
+    groups: ['mobile', 'javascript'],
+    title: 'Healthwallet',
     isVisit: false,
-    imageCounts: 2,
-    titleDetail: 'Medical Learning Site',
-    url: '',
-    description:
-      'MedLearnity is medical learning site. Students can schedule lession and have a video-tutoring.'
-  },
-  {
-    id: 7,
-    image: 'limologs',
-    skills: 'Ruby on Rails',
-    groups: ['ruby'],
-    title: 'Limologs',
-    isVisit: true,
-    imageCounts: 6,
-    titleDetail: 'Limo Logs',
-    url: 'https://www.limologs.com/',
-    description:
-      'Limo Logs has the ability to track all of your vehicles not just those that are DOT regulated, so when your drivers go from sedan to bus they can simply select their new vehicle. Used Ruby on Rails'
-  },
-  {
-    id: 8,
-    image: 'Conceptsauce',
-    skills: 'KeyStoneJS + NodeJS',
-    groups: ['javascript', 'nodejs'],
-    title: 'Conceptsauce',
-    isVisit: true,
     imageCounts: 1,
-    titleDetail: 'Conceptsauce',
-    url: 'https://conceptsauce.io',
+    titleDetail: 'Healthwallet',
+    url:
+      'https://apps.apple.com/us/app/the-health-wallet/id1178462674#?platform=iphone',
     description:
-      'Clients can be assured that the 3D Activity Platform is build by people with commercial experience.'
-  },
-  {
-    id: 9,
-    image: 'BeatThread',
-    skills: 'Ruby on Rails + Javascript',
-    groups: ['javascript', 'ruby'],
-    title: 'BeatThread',
-    isVisit: true,
-    imageCounts: 2,
-    titleDetail: 'BeatThread',
-    url: 'https://beatthread.com/',
-    description: 'Website for Musical Producers.'
-  },
-  {
-    id: 10,
-    image: 'Atlas',
-    skills: 'Angular1.5 + ExpressJS',
-    groups: ['javascript', 'nodejs'],
-    title: 'Atlas Global',
-    isVisit: true,
-    imageCounts: 1,
-    titleDetail: 'Atlas Global',
-    url: 'http://atlas.infocabsglobal.com',
-    description: 'Atlas Global is Job Site for engineers.'
+      'HealthWallet is a healthcare application that stores all your medical-related information. Health Wallet allows you to keep all of your medical card information in one location, accessible at times when you need it most.'
   }
 ];
 
 function Figure({ id, groups, imageName, title, skills, handleLearnMore }) {
-  var suffix = '';
-  if (process.env.NODE_ENV === 'production') {
-    suffix = '/mysite';
-  }
-  const imgSrc = suffix + '/images/projects/' + imageName + '.png';
-
+  const imgSrc = 'images/projects/' + imageName + '.png';
   const groupsJSON = JSON.stringify(groups);
 
   return (
@@ -183,7 +240,8 @@ function Figure({ id, groups, imageName, title, skills, handleLearnMore }) {
           <div className="picture-skills">{skills}</div>
           <a
             className="learn-more"
-            onClick={() => {
+            onClick={e => {
+              e.preventDefault();
               handleLearnMore(id);
             }}
           >
@@ -220,20 +278,19 @@ class PhotoGrid extends React.Component {
     });
     window.projectShuffleContainer = this.shuffle;
   }
+
   onClickLearnMore(id) {
     this.setState({
       modalDataID: id
     });
     this.toggle();
   }
+
   render() {
     const detailModalImageCounts = projects[this.state.modalDataID].imageCounts;
     const imagePrefix = projects[this.state.modalDataID].image;
-    var suffix = '';
-    if (process.env.NODE_ENV === 'production') {
-      suffix = '/mysite/';
-    }
     let detailImages = [];
+
     const { titleDetail, subtitle, description, url } = projects[
       this.state.modalDataID
     ];
@@ -241,10 +298,8 @@ class PhotoGrid extends React.Component {
       detailImages.push(
         <div>
           <img
+            src={'images/projects/' + imagePrefix + '_' + index + '.png'}
             alt=""
-            src={
-              suffix + 'images/projects/' + imagePrefix + '_' + index + '.png'
-            }
           />
         </div>
       );
@@ -283,18 +338,23 @@ class PhotoGrid extends React.Component {
             <div className="title">{titleDetail}</div>
             <div className="sub-title">{subtitle}</div>
             <div className="divider" />
-            <div className="description">{description}</div>
+            <div
+              className="description"
+              dangerouslySetInnerHTML={{ __html: description }}
+            />
           </ModalBody>
           <ModalFooter>
-            <a
-              href={url}
-              className="visit-button"
-              target="_blank"
-              color="primary"
-              onClick={this.toggle}
-            >
-              VISIT SITE
-            </a>{' '}
+            {url && (
+              <a
+                href={url}
+                className="visit-button"
+                target="_blank"
+                color="primary"
+                onClick={this.toggle}
+              >
+                VISIT SITE
+              </a>
+            )}{' '}
             <Button color="secondary" onClick={this.toggle}>
               Close
             </Button>

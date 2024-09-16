@@ -1,16 +1,47 @@
 .footer-section {
-  padding: 0px 0 30px 0;
+  padding: 70px 0 30px 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #1B242F;
+  background-color: #262b2e;
   flex-direction: column;
   position: relative;
   overflow: hidden;
   .diagonal-shadow {
     z-index: 1;
     padding-top: 6em;
-    background: #1B242F;
+    background: #262b2e;
+
+    &:before, &:after {
+      position: absolute;
+      content: '';
+      pointer-events: none;
+      top: 0;
+      left: -25%;
+      z-index: -1;
+      width: 150%;
+      height: 75%;
+      background: inherit;
+      -webkit-transform: rotate(-2deg);
+      transform: rotate(-2deg);
+      -webkit-transform-origin: 0 0;
+      transform-origin: 0 0;
+    }
+
+    &:before {
+      height: 50%;
+      background: #edf3f8;
+      -webkit-transform: rotate(-3deg);
+      transform: rotate(-3deg);
+      -webkit-transform-origin: 3% 0;
+      transform-origin: 3% 0;
+      z-index: 1000;
+    }
+
+    &:after {
+      background-color: #404548;
+      height: 50%;
+    }
   }
   .connect-me {
     display: flex;
@@ -50,7 +81,22 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: -0.5em;
+    top: 2.6em;
+
+    @media only screen and (max-width: 1500px) {
+      top: 3.0em;
+    }
+
+    @media only screen and (max-width: 1300px) {
+      top: 3.6em;
+    }
+
+    @media only screen and (max-width: 1200px) {
+      top: 4.6em;
+    }
+    @media only screen and (max-width: 992px) {
+      top: 5.6em;
+    }
     z-index: 100;
     .move-top {
       background-color: #E31B6D;
@@ -66,7 +112,7 @@
         color: white;
       }
       span {
-        font-size: 1.4em;
+        font-size: 2.4em;
       }
     }
   }

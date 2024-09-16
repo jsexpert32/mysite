@@ -47,46 +47,36 @@ class Footer extends React.Component {
         <div className="connect-me">
           <a
             className="social-icon"
-            rel="noopener noreferrer"
             target="_blank"
-            href="https://www.linkedin.com/in/shaorun-zhang-350988129"
+            href="https://www.linkedin.com/in/david-chan-76112630a"
           >
             {' '}
             <span className="fa fa-linkedin" />{' '}
           </a>
           <a
             className="social-icon"
-            rel="noopener noreferrer"
             target="_blank"
-            href="https://www.facebook.com/profile.php?id=100018282452111"
-          >
-            {' '}
-            <span className="fa fa-facebook" />{' '}
-          </a>
-          <a
-            className="social-icon"
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://github.com/JSExpert32"
+            href="https://github.com/jsexpert32"
           >
             {' '}
             <span className="fa fa-github" />{' '}
           </a>
+          {/*
           <a className="social-icon" onClick={this.startSkypeChat}>
             <span className="fa fa-skype" />
           </a>
+          */}
           <a
             className="social-icon"
-            rel="noopener noreferrer"
             target="_blank"
-            href="mailto:developer1215@outlook.com"
+            href="mailto:davidchan881219@gmail.com"
           >
             {' '}
             <span className="fa fa-envelope" />{' '}
           </a>
         </div>
         <div className="copyright">
-          ShaoRun Zhang<span className="year"> ©2016</span>
+          David Chan<span className="year"> ©2024</span>
         </div>
       </div>
     );
